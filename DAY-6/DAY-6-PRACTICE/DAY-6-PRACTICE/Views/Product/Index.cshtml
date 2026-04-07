@@ -1,0 +1,32 @@
+﻿@model List<DAY_6_PRACTICE.Models.Product>    
+@{
+    ViewBag.Title = "Products";
+}
+<h1>Product List</h1>
+
+@if (Model.Count == 0)
+{
+    <div class="alert alert-info">
+        <h2>No products found!</h2>
+        <p>Our warehouse is empty.please comeback later.</p>
+    </div>
+}
+else
+{
+    @foreach (var product in Model)
+    {
+        <div>
+            <h3>
+                @product.Name
+                @if (product.Price > 50000)
+                {
+                    <span style="color:gold;font-size:0.8em;">Premium item</span>
+                }
+            </h3>
+            <p>Price:@product.Price</p>
+            <p>Desciption:@product.Description</p>
+            <hr />
+        </div>
+    }
+}
+
