@@ -1,2 +1,2 @@
-# ASP.NET-BAISC-LEARNING
+# ASP.NET-BASIC-LEARNING
 Learning basics of asp.et core
