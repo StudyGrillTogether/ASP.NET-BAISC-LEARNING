@@ -1,0 +1,25 @@
+﻿@model DAY_7_PRACTICE.Models.UserInput
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Enter your name</h1>
+<form asp-controller="Home" asp-action="Index" method="post">
+    <label asp-for="Name">Name:</label>
+    <input asp-for="Name"/>
+
+    <br/>
+
+    <label asp-for="Email">Email:</label>
+    <input asp-for="Email"/>
+
+    <br/>
+    <button type="submit">Submit</button>
+</form>
+
+@if (ViewBag.SubmittedName != null)
+{
+    <h2>Hello,@ViewBag.SubmittedName</h2>
+    <p>your email is :@ViewBag.SubmittedEmail</p>
+}
