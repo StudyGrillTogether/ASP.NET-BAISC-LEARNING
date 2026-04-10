@@ -1,0 +1,22 @@
+﻿@model DAY_9_PRACTICE.Models.User
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<h1>Edit User</h1>
+<form asp-controller="Home" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id"/>
+
+    <label asp-for="Name">Name</label>
+    <input asp-for="Name"/>
+
+    <br />
+    <label asp-for="Email">Email</label>
+    <input asp-for="Email"/>
+
+    <br />
+
+    <button type="submit">SAVE CHANGES</button>
+    <a href="/Home/Index">Cancel</a>
+</form>

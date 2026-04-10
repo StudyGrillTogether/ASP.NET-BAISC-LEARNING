@@ -1,0 +1,32 @@
+﻿@model List<DAY_9_PRACTICE.Models.User>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Users</h1>
+<form asp-controller="Home" asp-action="Index" method="Post">
+    <label asp-for="@(new DAY_9_PRACTICE.Models.User().Name)">Name</label>
+    <input name="Name" />
+
+    <br/>
+
+    <label asp-for="@(new DAY_9_PRACTICE.Models.User().Email)">Email</label>
+    <input name="Email"/>
+    <br />  
+
+    <button type="submit">Add User</button>
+</form>
+<hr/>
+<h2>ALL USERS</h2>
+@foreach(var user in Model)
+{
+    <div>
+        <p>Id:@user.Id</p>
+        <p>Name:@user.Name</p>
+        <p>Email:@user.Email</p>
+        <a href="/Home/Edit/@user.Id">Edit</a>
+        <a href="/Home/Delete/@user.Id">Delete</a>
+        <hr />
+    </div>
+}
