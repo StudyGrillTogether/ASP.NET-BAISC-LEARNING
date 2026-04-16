@@ -14,7 +14,7 @@ namespace MiniAppMvc.Controllers
         {
             if (login.Username == "admin" && login.Password == "123")
             {
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index","Product");
             }
 
             ViewBag.Message = "Invalid Credentials";
