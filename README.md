@@ -217,6 +217,42 @@ A day-by-day log of my ASP.NET Core learning progress.
 
 ---
 
+# Day 13 – Authentication Basics
+
+## Theory
+- Authentication vs Authorization
+- Basic login/logout flow
+- Sessions (conceptual)
+
+## Practice Problems
+- Design login flow
+- Identify protected routes
+
+## GitHub Exercise
+### Build:
+- Simple login system (hardcoded user)
+
+---
+
+# Day 14 – Deployment & Final Project
+
+## Theory
+- Publishing app
+- Hosting basics
+- Running in production
+
+## Practice Problems
+- Understand deployment steps
+- Review full flow
+
+## GitHub Exercise
+### Final Project:
+#### Mini App:
+- Login
+- CRUD operations
+- API endpoint
+- Push complete project to GitHub
+
 ## Tech Stack
 - ASP.NET Core (MVC & Web API)
 - C#
@@ -224,3 +260,5 @@ A day-by-day log of my ASP.NET Core learning progress.
 - Swagger (Swashbuckle)
 - Visual Studio 2022
 - Git & GitHub
+
+- 
