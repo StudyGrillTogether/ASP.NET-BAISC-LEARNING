@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "User Dashboard";
+}
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-body text-center">
+            <h1 class="display-4">Welcome, @ViewBag.Username! 🎉</h1>
+            <p class="lead">You have successfully bypassed the login wall.</p>
+            <hr />
+            <p>This page is protected by the <code>[Authorize]</code> attribute.</p>
+            <a asp-controller="Account" asp-action="Logout" class="btn btn-outline-danger">Sign Out</a>
+        </div>
+    </div>
+</div>
