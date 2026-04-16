@@ -1,0 +1,31 @@
+﻿@model List<MiniAppMvc.Models.Product> 
+@*expects a list of product obkexts*@
+<h2>Product List</h2>
+
+<a href="/Product/Create">Add New Product</a>
+
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td>@product.Price</td>
+            <td>
+                <a href="/Product/Edit/@product.Id">Edit</a>
+                |
+                <a href="/Product/Delete/@product.Id">Delete</a>
+            </td>
+
+        </tr>
+    }
+
+    @*loops through products passed from return view(products)*@
+</table>
