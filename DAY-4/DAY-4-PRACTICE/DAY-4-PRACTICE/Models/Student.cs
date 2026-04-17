@@ -9,7 +9,7 @@
 
         public bool IsAdult(int age)
         {
-            if (Age < 18)
+            if (age < 18)
             {
                 return false;
             }

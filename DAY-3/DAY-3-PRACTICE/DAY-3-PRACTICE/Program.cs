@@ -24,6 +24,9 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 app.UseMiddleware<RequestLoggingMiddleware>();
+///✔ Intercepts every request
+///✔ Logs request details
+///✔ Passes request forward
 app.MapControllers();
 
 app.Run();
